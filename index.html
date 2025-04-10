@@ -11,13 +11,32 @@
 
 
 <body>
-    <h1>Hello World!</h1>
+    <div id="title">🇸🇬 Singapore 3-Day Itinerary</div>
 
-    <div id="map-container"></div>
+    <div id="intro-popup">
+        <p><strong>This is your 🇸🇬 Singapore 3-Day Itinerary.</strong><br>
+        Click the markers to view your destinations.</p>
+        <button id="close-popup">Got it!</button>
+    </div>
 
+    <div id="overlay"></div>
+
+
+    <div id="map-wrapper">
+         <div id="map-container"></div>
+    </div>
+
+    <div id="legend">
+        <h3>Legend</h3>
+        <div><span class="legend-color" style="background-color: maroon;"></span> Day 1</div>
+        <div><span class="legend-color" style="background-color: steelblue;"></span> Day 2</div>
+        <div><span class="legend-color" style="background-color: orange;"></span> Day 3</div>
+    </div>
+
+    <!-- Scripts at the end for faster page loading -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.11.0/mapbox-gl.js"></script>
+    <script src="data.js"></script>
     <script src="scripts.js"></script>
-
 </body>
 
 </html>
